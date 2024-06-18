@@ -17,10 +17,6 @@ export default function NavBar() {
     document.title = `Jiaqing | ${getHeaderTitleByPath(path, language)}`;
   }, [language, path]);
 
-  const handleLanguageButton = (lan) => {
-    setLanguage(lan);
-  };
-
   return (
     <div className='navbar justify-content-center mx-2 px-2'>
       <div className='d-flex shadow rounded-pill m-2 p-2'>
@@ -45,28 +41,6 @@ export default function NavBar() {
           ))}
         </Grid>
       </div>
-      <Grid container justifyContent={'center'}>
-        {Object.values(LANGUAGE).map((lan) => (
-          <div
-            style={{
-              minWidth: '75px',
-              cursor: 'pointer',
-              color: `${lan.value === language ? '#14b8a6' : ''}`,
-            }}
-            key={`nav-bar-${lan.value}`}
-            onClick={() => handleLanguageButton(lan.value)}
-            className='language m-2 p-2 fw-bold text-center'
-          >
-            <img
-              src={lan.value === LANGUAGE.chinese.value ? chinaImage : usImage}
-              alt='language-flag'
-              className='mx-2'
-              style={{ height: '40px' }}
-            ></img>
-            {lan.title}
-          </div>
-        ))}
-      </Grid>
     </div>
   );
 }

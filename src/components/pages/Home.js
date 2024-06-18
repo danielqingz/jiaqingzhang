@@ -19,21 +19,21 @@ export default function Home() {
   const TEXT_1 = getCurrentLanguageText(
     language,
     `
-🚀 Hi, I'm Jiaqing Zhang, a PhD student at the University of Florida.`,
+🚀 Hi, I'm Jiaqing Zhang, a PhD student at the University of Florida`,
     `
 🚀 你好，我是张嘉庆，佛罗里达大学的PhD学生`
   ).split(' ');
 
   const TEXT_2 = getCurrentLanguageText(
     language,
-    `🎓 My research interest is AI in Healthcare.`,
-    `🎓 我的研究兴趣是AI在医疗健康领域的应用。`
+    `🎓 My research interest is AI in Healthcare`,
+    `🎓 我的研究兴趣是AI在医疗健康领域的应用`
   ).split(' ');
 
   const TEXT_3 = getCurrentLanguageText(
     language,
-    `🎉 I am a huge fan of Pokemon.`,
-    `🎉 太喜欢宝可梦了。`
+    `🎉 I am a huge fan of Pokémon`,
+    `🎉 太喜欢宝可梦了`
   ).split(' ');
 
   return (

@@ -98,14 +98,15 @@ export default function InnovationHub() {
                 className='text-decoration-none text-black'
                 state={publication}
               >
-                <h1 className='fs-3 fw-normal'>
+                <h1 className='fs-4 text-primary fw-normal'>
                   {publication.title}
                 </h1>
-                <h2 className='fs-4'>
-
-                </h2>
+                
                 <h3 className='fs-5 fw-normal'>
-                  {publication?.authors?.map((author) => (<span className={`${author === 'Jiaqing Zhang' ? 'fw-bold' : ''}`}>{author + ', '}</span>))}
+                  {publication?.authors?.map((author, i) => (
+                    <><span className={`${author.includes('Jiaqing Zhang') ? 'fw-bold' : ''}`}>{author}</span>
+                      <span>{i === publication?.authors.length - 1 ? '' : ', '}</span></>))}
+
                 </h3>
                 <div className='fst-italic mb-2'>
                   {

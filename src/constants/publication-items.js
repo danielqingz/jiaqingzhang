@@ -17,8 +17,7 @@ export const CONFERENCE = [
   ],
     title: 'Leveraging Computer Vision in the Intensive Care Unit (ICU) for Examining Visitation and Mobility',
     description: [
-      'Leveraging noninvasive depth imaging, this study uses computer vision to monitor ICU visitations and patient mobility, linking increased visitations with deteriorating acuity and delirium, while decreased visitations correlate with lower pain levels.',
-      'This approach demonstrates the feasibility of enhancing patient monitoring and reducing healthcare provider workload.',
+      'Leveraged computer vision technique on noninvasive depth imaging to monitor ICU visitations and patient mobility',
     ],
     url: 'https://arxiv.org/abs/2403.06322'
   },
@@ -36,10 +35,53 @@ export const CONFERENCE = [
   ],
     title: 'AI-Enhanced Intensive Care Unit: Revolutionizing Patient Care with Pervasive Sensing',
     description: [
-      'The Intelligent Intensive Care Unit (I2CU) system leverages AI to enhance patient monitoring through multi-modal data collection, including depth and RGB images, accelerometry, electromyography, sound pressure, and light levels',
-      'This comprehensive approach aims to provide continuous, granular assessments of acuity, delirium risk, pain, and mobility, reducing healthcare provider workload and improving care quality',
+      'Developed Intelligent Intensive Care Unit (I2CU) system leveraging AI to enhance patient monitoring through multi-modal data collection, including depth and RGB images, accelerometry, electromyography, sound pressure, light levels, and EHR data',
     ],
     url: 'https://arxiv.org/abs/2303.06252'
+  },
+  {
+    publisher: 'Arxiv',
+    time: 'March 2023',
+    authors: [
+      'Sabyasachi Bandyopadhyay', 
+      'Ahna Cecil', 
+      'Jessica Sena', 
+      'Andrea Davidson', 
+      'Ziyuan Guan', 
+      'Subhash Nerella', 
+      'Jiaqing Zhang', 
+      'Kia Khezeli', 
+      'Brooke Armfield', 
+      'Azra Bihorac', 
+      'Parisa Rashidi'
+  ],
+    title: 'Predicting risk of delirium from ambient noise and light information in the ICU',
+    description: [
+      'Proposed a deep-learning model predicting ICU delirium using ambient light and noise data from 102 patients',
+      'Achieved high performance on long-term predicting (28 days after data collection)',
+    ],
+    url: 'https://arxiv.org/abs/2303.06253'
+  },
+  {
+    publisher: 'Research Square',
+    time: 'October 2023',
+    authors: [
+      'Jiaqing Zhang', 
+      'Sabyasachi Bandyopadhyay', 
+      'Faith Kimmet', 
+      'Jack Wittmayer', 
+      'Kia Khezeli', 
+      'David J Libon', 
+      'Catherine C Price', 
+      'Parisa Rashidi'
+  ],
+    title: 'FaIRClocks: Fair and Interpretable Representation of the Clock Drawing Test for mitigating classifier bias against lower educational groups',
+    description: [
+      'Proposed FaIRClocks, a fair and interpretable clock drawing test model, mitigates educational bias in cognitive assessments',
+      'Used embeddings from a Relevance Factor Variational Autoencoder (RF-VAE) and fairness metrics, Fairclocks predicts cognitive scores accurately for individuals with varying education levels, ensuring balanced identification of attention and memory deficits',
+      'Deployed fairness metrics to remove bias of cognitive assessment models against lower educational groups',
+    ],
+    url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10602062/'
   },
 ];
 
@@ -64,7 +106,7 @@ export const JOURNAL = [
     ],
     title: 'Transformers and large language models in healthcare: A review',
     description: [
-      'A compelted review of how Transformer architecture has been adopted to analyze various forms of healthcare data, including clinical NLP, medical imaging, structured Electronic Health Records (EHR), social media, bio-physiological signals, biomolecular sequences',
+      'Provided a compelted review of how Transformer architecture has been adopted to analyze various forms of healthcare data, including clinical NLP, medical imaging, structured Electronic Health Records (EHR), social media, bio-physiological signals, biomolecular sequences',
     ],
     url: 'https://www.sciencedirect.com/science/article/pii/S0933365724001428',
   },
@@ -89,8 +131,7 @@ export const JOURNAL = [
     ,
     title: 'Wearable sensors in patient acuity assessment in critical care',
     description: [
-      'Integrating wrist-worn accelerometer data with clinical EHR data, this study demonstrates enhanced acuity assessments in ICU patients using deep learning models.',
-      'Our models outperform traditional SOFA scores in predicting patient stability, showcasing significant improvements in precision, sensitivity, and overall predictive performance, offering a nuanced understanding of patient physiology and functional status.',
+      'Integrated wrist-worn accelerometer data with clinical EHR data to enhance acuity assessments in ICU patients using deep learning models',
     ],
     url: 'https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1386728/full'
   },

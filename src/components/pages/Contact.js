@@ -15,13 +15,13 @@ export default function Contact() {
       animate={{ opacity: 1, y: '0' }}
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
-      {/* <h1 className='text-left w-50 mt-5'>
+      <h1 className='text-left w-50 mt-5'>
         {getCurrentLanguageText(
           language,
-          `Let's Get in Touch: Ways to Connect with Me`,
+          `Let's Get in Touch`,
           '让我们保持联系'
         )}
-      </h1> */}
+      </h1>
       <p className='fs-5 text-secondary'>
         {getCurrentLanguageText(
           language,
