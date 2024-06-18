@@ -14,7 +14,7 @@ export default function Projects({ hideHeader = false }) {
 
   useEffect(() => {
     if (!hideHeader)
-      document.title = `Jimmy | ${getCurrentLanguageText(
+      document.title = `Jiaqing | ${getCurrentLanguageText(
         language,
         NAV_BAR.projects.title,
         NAV_BAR.projects.titleChinese
@@ -33,11 +33,11 @@ export default function Projects({ hideHeader = false }) {
           <h1 className='text-left w-50 mt-5'>
             {getCurrentLanguageText(
               language,
-              `Things I've made trying to put my dent in the universe.`,
-              '我为之努力，试图在世界上留下自己的一点印记。'
+              `Some fun projects`,
+              '一些好玩儿的小玩意儿'
             )}
           </h1>
-          <p className='fs-5 text-secondary'>
+          {/* <p className='fs-5 text-secondary'>
             {getCurrentLanguageText(
               language,
               `Embark on a journey through the projects that define my quest for
@@ -49,7 +49,7 @@ export default function Projects({ hideHeader = false }) {
               每一个都为我不断前行的使命做出了贡献，
               希望在世界上留下有意义的印记。`
             )}
-          </p>
+          </p> */}
         </>
       )}
       <Grid container className='justify-content-center'>

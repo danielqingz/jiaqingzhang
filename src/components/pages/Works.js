@@ -20,24 +20,9 @@ export default function WorkingExperience({ hideHeader = false }) {
       {!hideHeader && (
         <>
           <h1 className='text-left w-50 mt-5'>
-            {getCurrentLanguageText(
-              language,
-              'Professional Journey: A Chronicle of Growth',
-              '职业旅程：成长的历程'
-            )}
+            Experience
           </h1>
           <p className='fs-5 text-secondary'>
-            {getCurrentLanguageText(
-              language,
-              `Embark on a retrospective journey through my professional
-            experiences, where each role and project has played a pivotal role
-            in shaping my skills and perspective. From early career milestones
-            to challenging projects, this timeline reflects my commitment to
-            continuous learning and excellence.`,
-              `踏上回顾我职业经历的旅程，每一个角色和项目都在塑造我的技能和视角方面发挥了关键作用。
-              从早期的职业里程碑到富有挑战性的项目，
-              这条时间线反映了我对持续学习和卓越的承诺。`
-            )}
           </p>
         </>
       )}

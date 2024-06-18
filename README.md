@@ -2,7 +2,7 @@
 
 ## Description
 
-This is Jimmy's personal website. It may include blogs, gallaries, or any other Jimmy's interested topics including astronomy (CASA), technology, etc.
+This is Jiaqing's personal website. It may include blogs, gallaries, or any other Jimmy's interested topics including astronomy (CASA), technology, etc.
 
 ## Start Guide
 
@@ -16,6 +16,7 @@ This is Jimmy's personal website. It may include blogs, gallaries, or any other 
    ```
 
 ## Library Used
+
 * React
 * Lottie
 * framer-motion
@@ -42,8 +43,8 @@ server folder contains all the files working as backend server. They are used to
 
 ## Reference
 
-This website is originated from the tutorial of react-gh-pages repository created by gitname.<br>
+This website is originated from the tutorial of react-gh-pages repository created by gitname.`<br>`
 https://github.com/gitname/react-gh-pages
-<br>https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages
-<br>
+`<br>`https://stackoverflow.com/questions/71984401/react-router-not-working-with-github-pages
+`<br>`
 https://reactfolio.tharindu.dev/

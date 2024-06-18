@@ -14,7 +14,7 @@ export default function NavBar() {
   const [language, setLanguage] = useAtom(languageAtom);
 
   useEffect(() => {
-    document.title = `Jimmy | ${getHeaderTitleByPath(path, language)}`;
+    document.title = `Jiaqing | ${getHeaderTitleByPath(path, language)}`;
   }, [language, path]);
 
   const handleLanguageButton = (lan) => {

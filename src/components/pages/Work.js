@@ -15,7 +15,7 @@ export default function Work() {
   const language = useAtomValue(languageAtom);
 
   if (work.employer) {
-    document.title = `Jimmy | ${getCurrentLanguageText(
+    document.title = `Jiaqing | ${getCurrentLanguageText(
       language,
       work.employer,
       work.employer_chinese

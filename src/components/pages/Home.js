@@ -11,6 +11,7 @@ import { languageAtom } from '../../atoms/primitive.atom';
 import { getCurrentLanguageText } from '../../utils/get-current-language-text';
 import { NAV_BAR } from '../../constants/navbar-items';
 import { motion } from 'framer-motion';
+import pokeAnimation from '../../assets/animations/poke1.json'
 
 export default function Home() {
   const language = useAtomValue(languageAtom);
@@ -18,19 +19,21 @@ export default function Home() {
   const TEXT_1 = getCurrentLanguageText(
     language,
     `
-🚀 Hi, I'm Heng Sun, a recent graduate with a Bachelor of Science in
-Computer Science from the University of Florida.`,
+🚀 Hi, I'm Jiaqing Zhang, a PhD student at the University of Florida.`,
     `
-🚀 你好，我是孙恒，刚刚从佛罗里达大学计算机科学专业毕业，获得理学学士学位`
+🚀 你好，我是张嘉庆，佛罗里达大学的PhD学生`
   ).split(' ');
 
   const TEXT_2 = getCurrentLanguageText(
     language,
-    `🎓 Eager to further my academic journey, I aspire to pursue a Ph.D.
-  position that aligns with my passion for human-centered interaction,
-  machine learning models, and the exciting realm of IoT.`,
-    `🎓 渴望进一步我的学术之旅，我希望攻读与我对以人为中心的交互、
-    机器学习模型和物联网领域的激情相符的博士学位。`
+    `🎓 My research interest is AI in Healthcare.`,
+    `🎓 我的研究兴趣是AI在医疗健康领域的应用。`
+  ).split(' ');
+
+  const TEXT_3 = getCurrentLanguageText(
+    language,
+    `🎉 I am a huge fan of Pokemon.`,
+    `🎉 太喜欢宝可梦了。`
   ).split(' ');
 
   return (
@@ -45,8 +48,8 @@ Computer Science from the University of Florida.`,
           <h2 className='text-center fw-bold'>
             {getCurrentLanguageText(
               language,
-              'Full-stack web application developer',
-              '全栈网络应用程序开发者'
+              'AIer in Healthcare',
+              '医疗健康领域的炼丹师'
             )}
           </h2>
           <p className='fs-5 text-secondary'>
@@ -73,16 +76,30 @@ Computer Science from the University of Florida.`,
               </motion.span>
             ))}
           </p>
+          <p className='fs-5 text-secondary'>
+            {TEXT_3.map((el, i) => (
+              <motion.span
+                className='fs-5 text-secondary'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.25, delay: i / 10 }}
+              >
+                {el}{' '}
+              </motion.span>
+            ))}
+          </p>
         </Grid>
-        <Grid item md={4}>
-          <div className='mx-2'>
+        <Grid item md={5}>
+          <div className='mx'>
             <Lottie
               className='img-fluid'
-              animationData={web_development_animation}
+              animationData={pokeAnimation}
             ></Lottie>
           </div>
         </Grid>
       </Grid>
+
+      {/* <div className='w-50'><Lottie animationData={pokeAnimation}></Lottie></div> */}
 
       <div className='d-flex justify-content-center mb-5 mt-2'>
         <GitHubIcon
@@ -90,20 +107,20 @@ Computer Science from the University of Florida.`,
           role='button'
           color='action'
           fontSize='large'
-          onClick={() => window.open('https://github.com/jimmysoccer')}
+          onClick={() => window.open('https://github.com/danielqingz')}
         ></GitHubIcon>
         <EmailIcon
           className='mx-3'
           role='button'
           fontSize='large'
-          onClick={() => window.open('mailto:jimmysoccer0927@gmail.com')}
+          onClick={() => window.open('mailto:danielqing99@gmail.com')}
         ></EmailIcon>
         <LinkedInIcon
           className='mx-3'
           role='button'
           fontSize='large'
           onClick={() =>
-            window.open('https://www.linkedin.com/in/jimmysoccer/')
+            window.open('https://www.linkedin.com/in/jiaqing-zhang-danielqing/')
           }
         ></LinkedInIcon>
       </div>

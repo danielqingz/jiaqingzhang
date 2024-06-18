@@ -14,14 +14,8 @@ export default function About() {
 
   const TEXT_1 = getCurrentLanguageText(
     language,
-    `I am Heng Sun. You can call me Jimmy. I live in Gainesville, FL. I
-  am working from home right now. I am passionate about creating
-  high-quality code that follows best practices and industry
-  standards. I am always looking for new challenges and opportunities
-  to grow as a developer.`,
-    `我是孙恒, 你可以叫我Jimmy。我住在佛罗里达州的盖恩斯维尔。
-    目前在家工作。我热衷于编写遵循最佳实践和行业标准的高质量代码，
-    并且始终在寻找新的挑战和机会，以便在开发者的道路上不断成长。`
+    `TBD`,
+    `待修订`
   ).split(' ');
 
   return (
@@ -36,8 +30,8 @@ export default function About() {
           <h2 className='text-center fw-bold'>
             {getCurrentLanguageText(
               language,
-              `I am Heng Sun. I live in Gainesville.`,
-              `我是孙恒，现居于盖恩斯维尔，佛罗里达州`
+              `I am Jiaqing Zhang.`,
+              `我是张嘉庆`
             )}
           </h2>
           <p className='fs-5 text-secondary'>

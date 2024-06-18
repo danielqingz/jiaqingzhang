@@ -3,103 +3,136 @@ import { getCurrentLanguageText } from '../../utils/get-current-language-text';
 import { useAtom, useAtomValue } from 'jotai';
 import { languageAtom, loggedInAtom } from '../../atoms/primitive.atom';
 import DataTable from '../common/DataTable';
-import { Button, TextField } from '@mui/material';
+import { Button, Grid, TextField } from '@mui/material';
 import { fetchDevRecords } from '../../services/fetch-dev-records';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { LANGUAGE, NAV_BAR } from '../../constants/navbar-items';
+import { CONFERENCE, JOURNAL, PUBLICATION } from '../../constants/publication-items';
 
 export default function InnovationHub() {
   const language = useAtomValue(languageAtom);
-  const [loggedIn, setLoggedIn] = useAtom(loggedInAtom);
-  const [records, setRecords] = useState([]);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    if (username === 'jimmy' && password === 'jimmy') {
-      setLoggedIn(true);
-    } else {
-      setLoggedIn(false);
-    }
-  };
-
-  const handleLogOut = () => {
-    setLoggedIn(false);
-  };
-
-  const getDevRecords = async () => {
-    const records = await fetchDevRecords();
-    if (records) setRecords(records);
-  };
 
   return (
     <motion.div
-      className='container my-5 text-center'
+      className='container'
       initial={{ opacity: 0, y: '100%' }}
       animate={{ opacity: 1, y: '0' }}
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
-      <h1 className='text-success'>
-        {getCurrentLanguageText(language, 'Innovation Hub', '创新Hub')}
-      </h1>
-      <h3 className='text-success opacity-50'>
-        {getCurrentLanguageText(
-          language,
-          `Discover groundbreaking designs and state-of-the-art tech solutions that
-          redefine the digital experience, showcasing the limitless possibilities
-          of innovation.`,
-          `发现开创性的设计和前沿技术解决方案，
-          重新定义数字体验，
-          展示创新的无限可能性。`
-        )}
-      </h3>
-
-      {loggedIn ? (
+      {(
         <>
-          {records?.length !== 0 ? (
-            records.map((record) => <div>{record?.first_name}</div>)
-          ) : (
-            <div>
-              <Button
-                className='my-3'
-                variant='contained'
-                onClick={() => getDevRecords()}
-              >
-                Click to get data
-              </Button>
-              <div>No Users</div>
-            </div>
-          )}
-          <div className='container'>
-            <DataTable></DataTable>
-          </div>
-          <Button className='mt-3' variant='contained' onClick={handleLogOut}>
-            Log Out
-          </Button>
+          <h1 className='text-left w-50 mt-5'>
+            ar<math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mi>&#x3C7;</mi>
+            </math>iv / Conference
+          </h1>
         </>
-      ) : (
-        <div className='container mt-5 w-25'>
-          <form
-            className='d-flex flex-column gap-4'
-            onSubmit={(e) => handleLogin(e)}
-          >
-            <TextField
-              label={'username'}
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            ></TextField>
-            <TextField
-              label={'password'}
-              type='password'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            ></TextField>
-            <Button type='submit button' variant='contained'>
-              Login
-            </Button>
-          </form>
-        </div>
       )}
+      <Grid container className='justify-content-center'>
+        {CONFERENCE.map((publication, index) => {
+          return (
+            <Grid
+              item
+              md={12}
+              className='box shadow p-3 rounded m-4'
+              key={`work-${index}`}
+            >
+              <Link
+                to={publication.url}
+                target='_blank'
+                className='text-decoration-none text-black'
+                state={publication}
+              >
+                <h1 className='fs-4 text-primary fw-normal'>
+                  {publication.title}
+                </h1>
+
+                <h3 className='fs-5 fw-normal'>
+                  {publication?.authors?.map((author, i) => (
+                    <><span className={`${author.includes('Jiaqing Zhang') ? 'fw-bold' : ''}`}>{author}</span>
+                      <span>{i === publication?.authors.length - 1 ? '' : ', '}</span></>))}
+
+                </h3>
+                <div className='fst-italic mb-2'>
+                  {
+                    publication.publisher
+                  }{', '}
+                  {
+                    publication.time
+                  }
+                </div>
+                <ul>
+                  {(language === LANGUAGE.chinese.value
+                    ? publication.description_chinese
+                    : publication.description
+                  ).map((description) => (
+                    <li
+                      className='text-secondary'
+                      key={`work-exper-des-${description}`}
+                    >
+                      {description}
+                    </li>
+                  ))}
+                </ul>
+              </Link>
+            </Grid>
+          );
+        })}
+      </Grid>
+      <h1 className='text-left w-50'>
+        Journal
+      </h1>
+      <Grid container className='justify-content-center'>
+        {JOURNAL.map((publication, index) => {
+          return (
+            <Grid
+              item
+              md={12}
+              className='box shadow p-3 rounded m-4'
+              key={`work-${index}`}
+            >
+              <Link
+                to={publication.url}
+                target='_blank'
+                className='text-decoration-none text-black'
+                state={publication}
+              >
+                <h1 className='fs-3 fw-normal'>
+                  {publication.title}
+                </h1>
+                <h2 className='fs-4'>
+
+                </h2>
+                <h3 className='fs-5 fw-normal'>
+                  {publication?.authors?.map((author) => (<span className={`${author === 'Jiaqing Zhang' ? 'fw-bold' : ''}`}>{author + ', '}</span>))}
+                </h3>
+                <div className='fst-italic mb-2'>
+                  {
+                    publication.publisher
+                  }{', '}
+                  {
+                    publication.time
+                  }
+                </div>
+                <ul>
+                  {(language === LANGUAGE.chinese.value
+                    ? publication.description_chinese
+                    : publication.description
+                  ).map((description) => (
+                    <li
+                      className='text-secondary'
+                      key={`work-exper-des-${description}`}
+                    >
+                      {description}
+                    </li>
+                  ))}
+                </ul>
+              </Link>
+            </Grid>
+          );
+        })}
+      </Grid>
     </motion.div>
   );
 }

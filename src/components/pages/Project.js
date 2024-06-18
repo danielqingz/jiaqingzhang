@@ -16,7 +16,7 @@ export default function Project() {
   const isMobileMatch = useMediaQuery('(max-width:600px)');
 
   if (project.title) {
-    document.title = `Jimmy | ${getCurrentLanguageText(
+    document.title = `Jiaqing | ${getCurrentLanguageText(
       language,
       project.title,
       project.title_chinese

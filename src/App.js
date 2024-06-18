@@ -21,7 +21,7 @@ function App() {
 
       <Routes>
         <Route path={NAV_BAR.home.path} element={<Home></Home>}></Route>
-        <Route path={NAV_BAR.about.path} element={<About></About>}></Route>
+        {/* <Route path={NAV_BAR.about.path} element={<About></About>}></Route> */}
         <Route
           path={NAV_BAR.workingExperience.path}
           element={<WorkingExperience></WorkingExperience>}

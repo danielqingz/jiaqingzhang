@@ -4,10 +4,15 @@ export const NAV_BAR = {
     title: 'Home',
     titleChinese: '首页',
   },
-  about: {
-    path: '/about',
-    title: 'About',
-    titleChinese: '关于',
+  // about: {
+  //   path: '/about',
+  //   title: 'About',
+  //   titleChinese: '关于',
+  // },
+  innovationHub: {
+    path: '/pulication',
+    title: 'Publications',
+    titleChinese: '出版',
   },
   workingExperience: {
     path: '/work',
@@ -23,11 +28,6 @@ export const NAV_BAR = {
     path: '/contact',
     title: 'Contact',
     titleChinese: '联系',
-  },
-  innovationHub: {
-    path: '/innovation',
-    title: 'Innovation Hub',
-    titleChinese: '创新Hub',
   },
 };
 

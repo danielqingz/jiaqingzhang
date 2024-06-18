@@ -47,6 +47,8 @@ import roamm_ehr_patient_list from './roamm-ehr-patient-list.jpg';
 import roamm_ehr_clinical from './roamm-ehr-clinical.jpg';
 import roamm_ehr_notification from './roamm-ehr-notification.jpg';
 
+import pokemongpt_1 from './pokemongpt_1.png';
+
 export const aboutImage = about;
 export const fullStackImage = full_stack;
 export const cSharpImage = c_sharp;
@@ -95,3 +97,5 @@ export const roammEhrDashboard = roamm_ehr_dashboard;
 export const roammEhrPatientList = roamm_ehr_patient_list;
 export const roammEhrClinical = roamm_ehr_clinical;
 export const roammEhrNotification = roamm_ehr_notification;
+
+export const pokemonGPTImage = pokemongpt_1;
