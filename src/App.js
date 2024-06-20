@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
 import { NAV_BAR } from './constants/navbar-items';
-import About from './components/pages/About';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import WorkingExperience from './components/pages/Works';
