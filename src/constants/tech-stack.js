@@ -14,4 +14,6 @@ export const techStack = {
   threeDJS: '3d.js',
   nodeJS: 'nodeJS',
   wechat: 'wechat',
+  pytorch: 'pytorch',
+  huggingFace: 'huggingFace',
 };

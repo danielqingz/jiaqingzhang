@@ -15,6 +15,9 @@ import {
   sqlImage,
   threeDJSImage,
   wechatImage,
+  pytorchImage,
+  huggingFaceImage,
+  chatGptImage,
 } from '../../assets/images/images';
 import '../../assets/styles/style.css';
 
@@ -67,6 +70,18 @@ export default function TechStackIcon({ stack }) {
     case techStack.wechat:
       return (
         <img src={wechatImage} alt='wechat' className='project-logo'></img>
+      );
+    case techStack.pytorch:
+      return (
+        <img src={pytorchImage} alt='pytorch' className='project-logo-large'></img>
+      );
+    case techStack.huggingFace:
+      return (
+        <img src={huggingFaceImage} alt='huggingFace' className='project-logo-xLarge'></img>
+      );
+    case techStack.chatGpt:
+      return (
+        <img src={chatGptImage} alt='chatGpt' className='project-logo'></img>
       );
     default:
       return (

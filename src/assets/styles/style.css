@@ -5,6 +5,20 @@
   margin-right: 10px;
   overflow: hidden;
 }
+.project-logo-large {
+  width: 80px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.project-logo-xLarge {
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
 .language {
   color: rgb(108, 117, 125);
 }

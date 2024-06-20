@@ -1,17 +1,9 @@
-import { useState } from 'react';
-import { getCurrentLanguageText } from '../../utils/get-current-language-text';
-import { useAtom, useAtomValue } from 'jotai';
-import { languageAtom, loggedInAtom } from '../../atoms/primitive.atom';
-import DataTable from '../common/DataTable';
-import { Button, Grid, TextField } from '@mui/material';
-import { fetchDevRecords } from '../../services/fetch-dev-records';
+import { Grid } from '@mui/material';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { LANGUAGE, NAV_BAR } from '../../constants/navbar-items';
-import { CONFERENCE, JOURNAL, PUBLICATION } from '../../constants/publication-items';
+import { CONFERENCE, JOURNAL } from '../../constants/publication-items';
 
 export default function InnovationHub() {
-  const language = useAtomValue(languageAtom);
 
   return (
     <motion.div
@@ -63,9 +55,7 @@ export default function InnovationHub() {
                   }
                 </div>
                 <ul>
-                  {(language === LANGUAGE.chinese.value
-                    ? publication.description_chinese
-                    : publication.description
+                  {(publication.description
                   ).map((description) => (
                     <li
                       className='text-secondary'
@@ -101,7 +91,7 @@ export default function InnovationHub() {
                 <h1 className='fs-4 text-primary fw-normal'>
                   {publication.title}
                 </h1>
-                
+
                 <h3 className='fs-5 fw-normal'>
                   {publication?.authors?.map((author, i) => (
                     <><span className={`${author.includes('Jiaqing Zhang') ? 'fw-bold' : ''}`}>{author}</span>
@@ -117,9 +107,7 @@ export default function InnovationHub() {
                   }
                 </div>
                 <ul>
-                  {(language === LANGUAGE.chinese.value
-                    ? publication.description_chinese
-                    : publication.description
+                  {(publication.description
                   ).map((description) => (
                     <li
                       className='text-secondary'

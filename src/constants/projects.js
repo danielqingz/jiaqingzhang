@@ -25,6 +25,7 @@ export const projects = [
       `建立深度学习模型来预测患者的病情并提供最佳治疗方案`,
     ],
     techStack: [
+      techStack.pytorch,
       techStack.sql,
       techStack.python,
     ],
@@ -41,7 +42,7 @@ export const projects = [
       `使用 RAG（检索增强生成）技术更新 ChatGPT 4o 描述和知识`,
     ],
     techStack: [
-      techStack.sql,
+      techStack.chatGpt,
       techStack.python,
     ],
     images: [

@@ -33,8 +33,8 @@ export default function Projects({ hideHeader = false }) {
           <h1 className='text-left w-50 mt-5'>
             {getCurrentLanguageText(
               language,
-              `Some fun projects`,
-              '一些好玩儿的小玩意儿'
+              `Projects`,
+              '项目'
             )}
           </h1>
           {/* <p className='fs-5 text-secondary'>

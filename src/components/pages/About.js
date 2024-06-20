@@ -1,7 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { UFImage, aboutImage, aquinasImage } from '../../assets/images/images';
+import { UFImage, aboutImage } from '../../assets/images/images';
 import { educationExperience } from '../../constants/education-items';
 import { Grid } from '@mui/material';
 import { getCurrentLanguageText } from '../../utils/get-current-language-text';
@@ -108,9 +108,7 @@ export default function About() {
             <div className='d-flex justify-content-center'>
               <img
                 src={
-                  exp.school === 'University of Florida'
-                    ? UFImage
-                    : aquinasImage
+                    UFImage
                 }
                 alt='school-logo'
                 className='img-fluid'

@@ -1,20 +1,40 @@
-import { projects } from './projects';
-import { techStack } from './tech-stack';
-
 export const CONFERENCE = [
   {
     publisher: 'Arxiv',
     time: 'March 2024',
     authors: [
-      'Scott Siegel', 
-      'Jiaqing Zhang', 
-      'Sabyasachi Bandyopadhyay', 
-      'Subhash Nerella', 
-      'Brandon Silva', 
-      'Tezcan Baslanti', 
-      'Azra Bihorac', 
+      'Miguel Contreras',
+      'Brandon Silva',
+      'Benjamin Shickel',
+      'Tezcan Ozrazgat-Baslanti',
+      'Yuanfang Ren',
+      'Ziyuan Guan',
+      'Jeremy Balch',
+      'Jiaqing Zhang',
+      'Sabyasachi Bandyopadhyay',
+      'Kia Khezeli',
+      'Azra Bihorac',
       'Parisa Rashidi'
-  ],
+    ],
+    title: 'APRICOT-Mamba: Acuity Prediction in Intensive Care Unit (ICU): Development and Validation of a Stability, Transitions, and Life-Sustaining Therapies Prediction Model',
+    description: [
+      'Poposed APRICOT-M, a deep learning model to predict patient acuity in the ICU',
+    ],
+    url: 'https://arxiv.org/abs/2311.02026'
+  },
+  {
+    publisher: 'Arxiv',
+    time: 'March 2024',
+    authors: [
+      'Scott Siegel',
+      'Jiaqing Zhang',
+      'Sabyasachi Bandyopadhyay',
+      'Subhash Nerella',
+      'Brandon Silva',
+      'Tezcan Baslanti',
+      'Azra Bihorac',
+      'Parisa Rashidi'
+    ],
     title: 'Leveraging Computer Vision in the Intensive Care Unit (ICU) for Examining Visitation and Mobility',
     description: [
       'Leveraged computer vision technique on noninvasive depth imaging to monitor ICU visitations and patient mobility',
@@ -25,14 +45,14 @@ export const CONFERENCE = [
     publisher: 'Arxiv',
     time: 'March 2023',
     authors: [
-      'Subhash Nerella', 
-      'Ziyuan Guan', 
-      'Scott Siegel', 
-      'Jiaqing Zhang', 
-      'Kia Khezeli', 
-      'Azra Bihorac', 
+      'Subhash Nerella',
+      'Ziyuan Guan',
+      'Scott Siegel',
+      'Jiaqing Zhang',
+      'Kia Khezeli',
+      'Azra Bihorac',
       'Parisa Rashidi'
-  ],
+    ],
     title: 'AI-Enhanced Intensive Care Unit: Revolutionizing Patient Care with Pervasive Sensing',
     description: [
       'Developed Intelligent Intensive Care Unit (I2CU) system leveraging AI to enhance patient monitoring through multi-modal data collection, including depth and RGB images, accelerometry, electromyography, sound pressure, light levels, and EHR data',
@@ -43,18 +63,18 @@ export const CONFERENCE = [
     publisher: 'Arxiv',
     time: 'March 2023',
     authors: [
-      'Sabyasachi Bandyopadhyay', 
-      'Ahna Cecil', 
-      'Jessica Sena', 
-      'Andrea Davidson', 
-      'Ziyuan Guan', 
-      'Subhash Nerella', 
-      'Jiaqing Zhang', 
-      'Kia Khezeli', 
-      'Brooke Armfield', 
-      'Azra Bihorac', 
+      'Sabyasachi Bandyopadhyay',
+      'Ahna Cecil',
+      'Jessica Sena',
+      'Andrea Davidson',
+      'Ziyuan Guan',
+      'Subhash Nerella',
+      'Jiaqing Zhang',
+      'Kia Khezeli',
+      'Brooke Armfield',
+      'Azra Bihorac',
       'Parisa Rashidi'
-  ],
+    ],
     title: 'Predicting risk of delirium from ambient noise and light information in the ICU',
     description: [
       'Proposed a deep-learning model predicting ICU delirium using ambient light and noise data from 102 patients',
@@ -66,15 +86,15 @@ export const CONFERENCE = [
     publisher: 'Research Square',
     time: 'October 2023',
     authors: [
-      'Jiaqing Zhang', 
-      'Sabyasachi Bandyopadhyay', 
-      'Faith Kimmet', 
-      'Jack Wittmayer', 
-      'Kia Khezeli', 
-      'David J Libon', 
-      'Catherine C Price', 
+      'Jiaqing Zhang',
+      'Sabyasachi Bandyopadhyay',
+      'Faith Kimmet',
+      'Jack Wittmayer',
+      'Kia Khezeli',
+      'David J Libon',
+      'Catherine C Price',
       'Parisa Rashidi'
-  ],
+    ],
     title: 'FaIRClocks: Fair and Interpretable Representation of the Clock Drawing Test for mitigating classifier bias against lower educational groups',
     description: [
       'Proposed FaIRClocks, a fair and interpretable clock drawing test model, mitigates educational bias in cognitive assessments',
