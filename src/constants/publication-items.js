@@ -82,31 +82,52 @@ export const CONFERENCE = [
     ],
     url: 'https://arxiv.org/abs/2303.06253'
   },
+  // {
+  //   publisher: 'Research Square',
+  //   time: 'October 2023',
+  //   authors: [
+  //     'Jiaqing Zhang',
+  //     'Sabyasachi Bandyopadhyay',
+  //     'Faith Kimmet',
+  //     'Jack Wittmayer',
+  //     'Kia Khezeli',
+  //     'David J Libon',
+  //     'Catherine C Price',
+  //     'Parisa Rashidi'
+  //   ],
+  //   title: 'FaIRClocks: Fair and Interpretable Representation of the Clock Drawing Test for mitigating classifier bias against lower educational groups',
+  //   description: [
+  //     'Proposed FaIRClocks, a fair and interpretable clock drawing test model, mitigates educational bias in cognitive assessments',
+  //     'Used embeddings from a Relevance Factor Variational Autoencoder (RF-VAE) and fairness metrics, Fairclocks predicts cognitive scores accurately for individuals with varying education levels, ensuring balanced identification of attention and memory deficits',
+  //     'Deployed fairness metrics to remove bias of cognitive assessment models against lower educational groups',
+  //   ],
+  //   url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10602062/'
+  // },
+];
+
+
+export const JOURNAL = [
   {
-    publisher: 'Research Square',
-    time: 'October 2023',
+    publisher: 'Scientific Reports',
+    time: 'July 2024',
     authors: [
-      'Jiaqing Zhang',
-      'Sabyasachi Bandyopadhyay',
-      'Faith Kimmet',
-      'Jack Wittmayer',
-      'Kia Khezeli',
-      'David J Libon',
-      'Catherine C Price',
-      'Parisa Rashidi'
-    ],
-    title: 'FaIRClocks: Fair and Interpretable Representation of the Clock Drawing Test for mitigating classifier bias against lower educational groups',
+      "Jiaqing Zhang",
+      "Sabyasachi Bandyopadhyay",
+      "Faith Kimmet",
+      "Jack Wittmayer",
+      "Kia Khezeli",
+      "David J Libon",
+      "Catherine C Price",
+      "Parisa Rashidi"
+  ],
+    title: 'Developing a fair and interpretable representation of the clock drawing test for mitigating low education and racial bias',
     description: [
       'Proposed FaIRClocks, a fair and interpretable clock drawing test model, mitigates educational bias in cognitive assessments',
       'Used embeddings from a Relevance Factor Variational Autoencoder (RF-VAE) and fairness metrics, Fairclocks predicts cognitive scores accurately for individuals with varying education levels, ensuring balanced identification of attention and memory deficits',
       'Deployed fairness metrics to remove bias of cognitive assessment models against lower educational groups',
     ],
-    url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10602062/'
+    url: 'https://www.nature.com/articles/s41598-024-68481-w',
   },
-];
-
-
-export const JOURNAL = [
   {
     publisher: 'Artificial Intelligence in Medicine',
     time: 'June 2024',
@@ -155,4 +176,7 @@ export const JOURNAL = [
     ],
     url: 'https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1386728/full'
   },
+];
+export const POSTOR = [
+
 ];
